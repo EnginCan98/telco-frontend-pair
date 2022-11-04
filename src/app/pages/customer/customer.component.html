@@ -1,0 +1,18 @@
+<!-- <ul class="list-group"> -->
+  <input [(ngModel)]="searchText" (keydown)="onSearchTextChange()" type="text" />
+   <li *ngFor="let item of individualCustomers | filterFirstName:''">{{ item.firstName }}</li> 
+  
+  <!-- <ng-template ngFor let-item [ngForOf]="individualCustomers"  >
+      <li class="list-group-item">
+      {{item.customerId}} - {{ item.firstName }} {{item.lastName}}</li>
+      <button>Detay</button>
+    </ng-template> -->
+
+    <!-- <ng-template ngFor let-item [ngForOf]="corporateCustomers"  >
+      <li class="list-group-item">
+      {{ item.customerId }} - {{ item.companyName}}</li>
+      <button >Detay</button>
+    </ng-template>
+  </ul> -->
+
+  <!-- <a routerLink="/individualCustomers" class="btn btn-light btn sm mb-3">Back</a> -->
